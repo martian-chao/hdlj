@@ -38,7 +38,7 @@ public class HealthCheckService {
     /**
      * 传送ip
      */
-    @Scheduled(cron = "0 0/30 * * * ?")
+    @Scheduled(cron = "0 0/10 * * * ?")
     public void toSendIp(){
         String ip = HttpUtil.httpGet("http://"+ipModel.getIp() + ":8090/hdzgs/getIp");
         LogUtil.infoHttp("发送ip:"+ip);
