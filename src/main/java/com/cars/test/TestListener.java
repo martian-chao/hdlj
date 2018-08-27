@@ -25,11 +25,9 @@ public class TestListener {
      */
     @Test
     public void testSendHdhz() {
-        for (int i = 0; i < 1; i++) {
 //            String json = "[{\"zcrq\":\"20180810\"},{\"zcrq\":\"20180811\"}]";
             String json = "[{\"zcrq\":\"20180817\",\"lwdw\":\"KFM00\",\"seqnum\":\"930628\"}]";
             rabbitTemplate.convertAndSend(QueueName.HD_HDHZ_QUEUE, json.getBytes());
-        }
     }
 
     /**
@@ -37,7 +35,6 @@ public class TestListener {
      */
     @Test
     public void testSendHdLcrq() {
-//        for (int i = 0; i < 1; i++) {
             String json = "[{\"ljdm\":\"B\",\"lcrq\":\"20180815\"}]";
             rabbitTemplate.convertAndSend(QueueName.HD_LCRQHZ_QUEUE, json.getBytes());
 //        }
