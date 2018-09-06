@@ -53,7 +53,7 @@ public class HdModel {
     private String zccz;
     private String ope4;
     private String htddh;
-    private String fj;
+    private String ffj;
     private String fz;
     private String fzhzzm;
     private String fhdwdm;
@@ -123,6 +123,7 @@ public class HdModel {
     private String lkyybz;
     private String auto;
     private String ljdm;
+    private String fj;
 
     public String getZcrq() {
         return zcrq;
@@ -1060,6 +1061,14 @@ public class HdModel {
         this.ljdm = ljdm;
     }
 
+    public String getFfj() {
+        return ffj;
+    }
+
+    public void setFfj(String ffj) {
+        this.ffj = ffj;
+    }
+
     @Override
     public String toString() {
         return "HdModel{" +
@@ -1110,7 +1119,7 @@ public class HdModel {
                 ", zccz='" + zccz + '\'' +
                 ", ope4='" + ope4 + '\'' +
                 ", htddh='" + htddh + '\'' +
-                ", fj='" + fj + '\'' +
+                ", ffj='" + ffj + '\'' +
                 ", fz='" + fz + '\'' +
                 ", fzhzzm='" + fzhzzm + '\'' +
                 ", fhdwdm='" + fhdwdm + '\'' +
@@ -1180,6 +1189,7 @@ public class HdModel {
                 ", lkyybz='" + lkyybz + '\'' +
                 ", auto='" + auto + '\'' +
                 ", ljdm='" + ljdm + '\'' +
+                ", fj='" + fj + '\'' +
                 '}';
     }
 }
